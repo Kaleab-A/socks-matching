@@ -7,8 +7,7 @@
 4. [Matching Socks](#matching-socks)
 5. [Evaluation](#evaluation)
 6. [Refinement](#refinement)
-7. [Deployment](#deployment)
-8. [Challenges and Tips](#challenges-and-tips)
+7. [Challenges and Tips](#challenges-and-tips)
 
 ## 1. Data Collection and Preprocessing
 ### Collect a Diverse Dataset
@@ -64,14 +63,9 @@
 ### Data Augmentation
 - Augment your data with transformations like rotations and color shifts.
 
-## 7. Deployment
-### Interface Development
-- Develop a user interface for uploading images of socks.
+ate the machine learning model with the interface for real-time processing.
 
-### Integration
-- Integrate the machine learning model with the interface for real-time processing.
-
-## 8. Challenges and Tips
+## 7. Challenges and Tips
 ### Varied Lighting and Angles
 - Data augmentation can help mitigate issues with varied lighting or angles.
 
@@ -80,3 +74,10 @@
 
 ### Computation Time
 - Focus on efficient algorithms for feature comparison and extraction.
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
+More idea
+1. Make a model that take 2 image with CNN and apply same neural network on both and combine the 2 CNN after a while to dense, from the dense you could find predit 1 or 0.
+2. Make the model take a hue (color histogram) and extracted shapes (I don't know how) , to predict 0 or 1.
+3. Use transfer learning to detect all the features and use the prediction (feature vectors) from that to train another model that take 2 feature vector to output 1 or 0.
