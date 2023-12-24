@@ -17,10 +17,12 @@
       - Online Dataset (if any)
       - Amazon socks page (online stores)
       - Bing Image Search API
-      - Google Image Search API
+      - Use AI to generate images (Shakky idea)
 
 ## Reference / Reference
 
 - <b>Deep Learning for sock classification to finite classes</b>
   - https://simon-aubury.medium.com/sorting-my-socks-with-deep-learning-part-1-1b5651d35f3e
   - https://simon-aubury.medium.com/kafka-stream-processing-sorting-socks-with-ksqldb-e4174ae5e703
+- Using bing to get images
+  - https://pyimagesearch.com/2018/04/09/how-to-quickly-build-a-deep-learning-image-dataset/
