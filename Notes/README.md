@@ -19,6 +19,30 @@
       - Bing Image Search API
       - Use AI to generate images (Shakky idea)
 
+## 2. &nbsp; Background image when taking photos of socks?
+
+### Issues
+
+- The background of the image is not consistent. This will affect the model's performance.
+
+### Solutions
+
+- Use various background when taking pictures and remove the background with some CV techniques.
+- I want to create an algorithm that is able to remove background of any surface. Because there is not garantee the client will use background with consistent color.
+
+## 3. &nbsp; Zoom level and Orientation of the socks
+
+### Issues
+
+- The zoom level and orientation of the socks are not consistent. This will affect the model's performance.
+
+### Solutions
+
+- Take 1 image of each sock and use image augmentation to with 360 rotation and zoom in/out to create more images and different brightness ...
+- If orientation highly affects the model's performance, then we will force the client to take the picture in a specific orientation. TO be able to do this later, the image should be taken with consistent orientation, before we apply image augmentation.
+
+<h4><center><b style="color:lime">**** Dec 24, 2023: Taking images of socks found missing in West House's Laundry Room ****</b></center></h4>
+
 ## Reference / Reference
 
 - <b>Deep Learning for sock classification to finite classes</b>
