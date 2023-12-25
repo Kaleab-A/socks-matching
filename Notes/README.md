@@ -1,4 +1,4 @@
-# Notes
+# Thought Process
 
 ## 1. &nbsp; How to get the training and testing images
 
@@ -27,8 +27,10 @@
 
 ### Solutions
 
-- Use various background when taking pictures and remove the background with some CV techniques.
-- I want to create an algorithm that is able to remove background of any surface. Because there is not garantee the client will use background with consistent color.
+- So we use U2Net model to remove background. But the model is not perfect. It will include some other backgroung elements in the image. So we need to find a way to remove those elements.
+- We then assume the center of the image is part of the sock. And then BFS from the center outward in the four direction until we get black (0, 0, 0) pixel. This is successful in most cases.
+  - One issue is that if the sock is not centered in the image, it will crash. To force this, we need to make the client move the sock to be centered on a cross icon on the screen.
+  - To be be more safe, we can do the BFS in all 8 directions including diagonals.
 
 ## 3. &nbsp; Zoom level and Orientation of the socks
 
@@ -41,7 +43,7 @@
 - Take 1 image of each sock and use image augmentation to with 360 rotation and zoom in/out to create more images and different brightness ...
 - If orientation highly affects the model's performance, then we will force the client to take the picture in a specific orientation. TO be able to do this later, the image should be taken with consistent orientation, before we apply image augmentation.
 
-<h4><center><b style="color:lime">**** Dec 24, 2023: Taking images of socks found missing in West House's Laundry Room ****</b></center></h4>
+<h4><center><b style="color:lime">**** Dec 24, 2023: Taking images of socks found missing in West House's Laundry Room - (49 images)****</b></center></h4>
 
 ## Reference / Reference
 
