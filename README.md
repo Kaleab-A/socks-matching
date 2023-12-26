@@ -1,6 +1,7 @@
 ---
 ---
 
+# Sock Matching Algorithm Project
 
 ## Table of Contents
 
