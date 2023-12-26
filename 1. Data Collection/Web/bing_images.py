@@ -1,5 +1,6 @@
 import requests
 import os
+from env import APIKEY
 
 
 def fetch_images(query, count, api_key):
@@ -26,9 +27,7 @@ def save_images(images, folder="downloaded_images"):
 def main():
     query = "single"  # Your search query
     count = 10  # Number of images to fetch
-    api_key = (
-        "996e2bb2401c4692bf64eee24ee2c62b"  # Replace with your Bing Search API key
-    )
+    api_key = APIKEY  # Replace with your Bing Search API key
 
     images = fetch_images(query, count, api_key)
     save_images(images)
