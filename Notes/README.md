@@ -1,5 +1,7 @@
 # Thought Process
 
+<h2> <b style="color:cyan"> Goal: Given 2 sock image, determine if they are a pair or not. </b></h2>
+
 ## 1. &nbsp; How to get the training and testing images
 
 ### Issues
@@ -44,6 +46,14 @@
 - If orientation highly affects the model's performance, then we will force the client to take the picture in a specific orientation. TO be able to do this later, the image should be taken with consistent orientation, before we apply image augmentation.
 
 <h4><center><b style="color:lime">**** Dec 24, 2023: Taking images of socks found missing in West House's Laundry Room - (49 images)****</b></center></h4>
+
+## 4. &nbsp; How to train the model
+
+### Options
+
+- Using tranfeer learning
+  - <b>Option 1:</b> Take off the last layer of the model and feed the image. Take the last layer (hoping it contains information for extracted features) and do this for 2 image. Now you have 2 vectors with same size. Then use cosine similarity or euclidean distance b/n them. Feed that to a new trainable neural network. When training the new network, augmented images of the same sock should give a 1 (pair) and augmented images of different socks should give a 0 (not pair).
+  - <b>Option 2:</b>
 
 ## Reference / Reference
 
