@@ -1,2 +1,2 @@
-Model ID,Model Type," Optimizer"," LR"," Train Acc"," Train Loss"," Val Acc"," Val Loss"
-,Flatten & Eudlidian,,,,,,
+Model ID,Model Type,Optimizer,LR," Test Acc"," Test Loss"
+1703801748,Flatten & Eudlidian,RMSprop,0.001,0.90111,0.34409

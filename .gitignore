@@ -1,3 +1,4 @@
 env.*
-*.h5
+3ModelTraining/logs/
+3ModelTraining/models/
 *.npy
