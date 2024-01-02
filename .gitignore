@@ -2,3 +2,5 @@ env.*
 3ModelTraining/logs/
 3ModelTraining/models/
 *.npy
+*.h5
+*.HEIC

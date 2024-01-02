@@ -22,8 +22,8 @@ def convert_heic_to_jpeg(heic_path, output_path):
     image.save(output_path, "JPEG")
 
 
-PATH = "1. Data Collection/Manual/HEIC"
-SAVE_PATH = "1. Data Collection/Manual/JPG"
+PATH = "1Data-Collection/Manual/Socks_Organized/HEIC"
+SAVE_PATH = "1Data-Collection/Manual/Socks_Organized/JPG"
 
 fileInPath = os.listdir(PATH)
 fileInSavePath = os.listdir(SAVE_PATH)
